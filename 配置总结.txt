@@ -1,0 +1,22 @@
+
+
+cp nginx.conf /usr/local/webserver/nginx/conf/
+/usr/local/webserver/nginx/sbin/nginx -t
+/usr/local/webserver/nginx/sbin/nginx -s reload
+cp config.json /etc/v2ray/
+service v2ray restart
+/usr/bin/v2ray/v2ray url
+service v2ray start|stop|status|reload|restart|force-reload
+
+
+
+-----------
+https://www.4spaces.org/v2ray-nginx-tls-websocket/   V2RAY
+https://www.runoob.com/linux/nginx-install-setup.html NGINX
+https://www.4spaces.org/digitalocean-build-v2ray-0-1/
+https://www.xpath.org/blog/001531048571577582cfa0ea2804e5f9cb224de052a4975000
+------------
+
+-------
+https://www.i5seo.com/v2ray-websocket-transmission-protocol-implementation-external-network-access.html/comment-page-1
+bash <(curl -s -L https://233blog.com/v2ray.sh)
